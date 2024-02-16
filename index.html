@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Food Recipe Book</title>
 </head>
 <body>
@@ -12,7 +17,7 @@
             <h1>Cuisine Craft</h1>
             <form>
                 <input type="text" class="search-box" placeholder="Search for recipe">
-                <button class="btn" type="submit">Search</button>
+                <button class="search-btn" type="submit">Search</button>
             </form>
         </nav>
     </header>
@@ -20,9 +25,23 @@
         <section>
             <div class="recipe-container">
                 <!-- All recipes will be present here which we will fetch from out API -->
-                <h2>Find your favourite recipes...</h2>
+                <h2>Find your favourite recipes</h2>
             </div>
+            
+            <!-- POP-UP container -->
+
+                <div class="recipe-details">
+                    <button class="close-btn" type="button">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span> 
+                    </button>
+                    <div class="recipe-details-content"></div>
+                </div>
+                
+           
         </section>
     </main>
+    <script src="./app.js"></script>
 </body>
 </html>
