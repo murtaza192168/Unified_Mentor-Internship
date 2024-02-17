@@ -94,9 +94,9 @@ const popUpInstruction = (meal) =>{
      <h3>Ingrdients:</h3>
      <ul class="ingredient-list">${fetchIngredients(meal)}</ul>
      
-     <div>
+     <div class="instructions">
         <h3>Instructions: </h3>
-        <p class="instructions">${meal.strInstructions}</p>
+        <p >${meal.strInstructions}</p>
      </div>
      
      `
