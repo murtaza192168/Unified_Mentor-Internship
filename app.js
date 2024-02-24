@@ -37,6 +37,7 @@ const fetchRecipes = async (query) => {
             recipeContainer.appendChild(recipeDiv);
 
             
+            // VIEW BUTTON : FOR Ingredients PAGE
             const viewButton = document.createElement('button');
             viewButton.textContent = 'View Recipe';
             viewButton.classList.add('view-btn');
@@ -48,6 +49,21 @@ const fetchRecipes = async (query) => {
                 // invoke a function here, that contains action-implementation {he response after clicking that viewButton}
                 popUpInstruction(meal);
             })
+
+            // SEE VIDEO : FOR YT VIDEO OF THE RECIPE
+            const viewYoutube = document.createElement('button');
+            viewYoutube.textContent = "See video";
+            viewYoutube.classList.add('view-youtube-btn')
+            recipeDiv.appendChild(viewYoutube);
+
+            // Add Functionality to this youtube button using addEventListener
+            viewYoutube.addEventListener('click', () =>{
+            window.location.href = `${meal.strYoutube}`;
+            const ytLink = window.location.href;
+            console.log(ytLink);
+            
+            })
+            
 
         
     })
