@@ -21,7 +21,9 @@ body::-webkit-scrollbar-track{
     background-color: #fff;
 }
 
+
 header nav{
+    
     /* position:fixed; */
     background-color: #3F4E4F;
     padding: 20px;
@@ -195,7 +197,7 @@ form button[type="submit"]:hover{
     transform: scale(1.03);
     
 }
-
+/* Show Ingredients button */
 .recipe .view-btn{
     font-size: 20px;
     font-weight: 600;
@@ -213,6 +215,26 @@ form button[type="submit"]:hover{
     background-color: #1e313b;
     color: #DCD7C9;
 }
+
+/* Youtube link button */
+.recipe .view-youtube-btn{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 18px auto;
+    color: #233b4a;
+    background-color: #DCD7C9;
+    transition: background-color 0.2s ease-out;
+    
+}
+.recipe .view-youtube-btn:hover {
+    background-color: #1e313b;
+    color: #DCD7C9;
+}
+
 
 
 
